@@ -16,4 +16,10 @@ public class Estudiante {
         this.edad = edad;
         this.curso = "No asignado"; // Valor por defecto para el curso
     }
+
+    // 3. Constructor que acepta todos los parámetros y utiliza this() para llamar al constructor de 2 parámetros
+    public Estudiante(String nombre, int edad, String curso) {
+        this(nombre, edad); // Reutiliza la asignación de nombre y edad
+        this.curso = curso;  // Asigna el atributo restante
+    }
 }
