@@ -43,4 +43,11 @@ public class CuentaBancaria {
     public void setTipoCuenta(String tipoCuenta) {
         this.tipoCuenta = tipoCuenta;
     }
+    // Metodo para mostrar Detalles de la Cuenta Bancaria
+    public void mostrarDetalles() {
+        System.out.println("--- Detalles de la Cuenta Bancaria ---");
+        System.out.println("Número de Cuenta: " + this.numeroCuenta);
+        System.out.println("Saldo: $" + this.saldo);
+        System.out.println("Tipo de Cuenta: " + this.tipoCuenta);
+    }
 }
