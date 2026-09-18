@@ -12,8 +12,18 @@ public class main {
         System.out.println("=== INGRESO DE DATOS POR CONSOLA ===");
 
         // --- 1. Lectura e instanciación de Libro ---
-        System.out.println("\n--- Datos del Libro ---");
+        System.out.println("--- Datos del Libro ---");
         System.out.print("Ingrese título del libro: ");
         String titulo = scanner.nextLine();
+
+        System.out.print("Ingrese autor del libro: ");
+        String autor = scanner.nextLine();
+
+        System.out.print("Ingrese número de páginas: ");
+        int paginas = scanner.nextInt();
+        scanner.nextLine(); // Limpiar el buffer de entrada
+
+        Libro libroUsuario = new Libro(titulo, autor, paginas);
+        Libro libroDefecto = new Libro(); // Probar constructor por defecto
     }
 }
