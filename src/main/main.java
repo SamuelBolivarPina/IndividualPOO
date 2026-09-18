@@ -25,5 +25,10 @@ public class main {
 
         Libro libroUsuario = new Libro(titulo, autor, paginas);
         Libro libroDefecto = new Libro(); // Probar constructor por defecto
+
+        // --- 2. Lectura e instanciación de CuentaBancaria ---
+        System.out.println("\n--- Datos de la Cuenta Bancaria ---");
+        System.out.print("Ingrese número de cuenta: ");
+        String numCuenta = scanner.nextLine();
     }
 }
