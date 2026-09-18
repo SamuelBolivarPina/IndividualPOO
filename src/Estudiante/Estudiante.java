@@ -46,4 +46,10 @@ public class Estudiante {
     public void setCurso(String curso) {
         this.curso = curso;
     }
+    // Metodo para mostrar los Detalles del estudiante
+    public void mostrarDetalles() {
+        System.out.println("--- Detalles del Estudiante ---");
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Edad: " + this.edad + " años");
+        System.out.println("Curso: " + this.curso);
 }
