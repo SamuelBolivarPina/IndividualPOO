@@ -40,5 +40,17 @@ public class main {
 
         CuentaBancaria cuentaUsuario = new CuentaBancaria(numCuenta, saldo, tipoCuenta);
         CuentaBancaria cuentaDosParams = new CuentaBancaria(numCuenta, tipoCuenta); // Probar constructor de 2 parámetros
+
+        // --- 3. Lectura e instanciación de Estudiante ---
+        System.out.println("\n--- Datos del Estudiante ---");
+        System.out.print("Ingrese nombre del estudiante: ");
+        String nombreEst = scanner.nextLine();
+
+        System.out.print("Ingrese edad del estudiante: ");
+        int edadEst = scanner.nextInt();
+        scanner.nextLine(); // Limpiar buffer
+
+        System.out.print("Ingrese curso del estudiante: ");
+        String cursoEst = scanner.nextLine();
     }
 }
