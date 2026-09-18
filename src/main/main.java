@@ -42,7 +42,7 @@ public class main {
         CuentaBancaria cuentaDosParams = new CuentaBancaria(numCuenta, tipoCuenta); // Probar constructor de 2 parámetros
 
         // --- 3. Lectura e instanciación de Estudiante ---
-        System.out.println("\n--- Datos del Estudiante ---");
+        System.out.println("--- Datos del Estudiante ---");
         System.out.print("Ingrese nombre del estudiante: ");
         String nombreEst = scanner.nextLine();
 
@@ -56,8 +56,19 @@ public class main {
         Estudiante estudianteDosParams = new Estudiante(nombreEst, edadEst);
 
         // --- SALIDA CON toString() ---
-        System.out.println("\n=============================================");
+        System.out.println("=============================================");
         System.out.println("   RESULTADOS (Muestra con método toString)  ");
         System.out.println("=============================================");
+
+        System.out.println(libroUsuario.toString());
+        System.out.println(libroDefecto.toString());
+
+        System.out.println(cuentaUsuario.toString());
+        System.out.println(cuentaDosParams.toString());
+
+        System.out.println(estudianteUsuario.toString());
+        System.out.println(estudianteDosParams.toString());
+
+        scanner.close();
     }
 }
