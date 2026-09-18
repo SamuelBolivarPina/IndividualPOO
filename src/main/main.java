@@ -54,5 +54,10 @@ public class main {
         String cursoEst = scanner.nextLine();
         Estudiante estudianteUsuario = new Estudiante(nombreEst, edadEst, cursoEst);
         Estudiante estudianteDosParams = new Estudiante(nombreEst, edadEst);
+
+        // --- SALIDA CON toString() ---
+        System.out.println("\n=============================================");
+        System.out.println("   RESULTADOS (Muestra con método toString)  ");
+        System.out.println("=============================================");
     }
 }
