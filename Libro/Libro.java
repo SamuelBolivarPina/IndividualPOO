@@ -41,4 +41,11 @@ public class Libro {
     public void setNumeroPaginas(int numeroPaginas) {
         this.numeroPaginas = numeroPaginas;
     }
+   // metodo para mostrar detalles del libro
+    public void mostrarDetalles() {
+        System.out.println("--- Detalles del Libro ---");
+        System.out.println("Título: " + this.titulo);
+        System.out.println("Autor: " + this.autor);
+        System.out.println("Número de páginas: " + this.numeroPaginas);
+    }
 }
