@@ -10,4 +10,11 @@ public class Libro {
         this.autor = "Autor desconocido";
         this.numeroPaginas = 0;
     }
+
+    // 2. Constructor parametrizado (asigna valores específicos)
+    public Libro(String titulo, String autor, int numeroPaginas) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.numeroPaginas = numeroPaginas;
+    }
 }
