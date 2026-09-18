@@ -1,3 +1,5 @@
+package Libro;
+
 public class Libro {
     // Atributos de la clase
     public String titulo;
@@ -43,7 +45,7 @@ public class Libro {
     }
    // metodo para mostrar detalles del libro
     public void mostrarDetalles() {
-        System.out.println("--- Detalles del Libro ---");
+        System.out.println("--- Detalles del Libro.Libro ---");
         System.out.println("Título: " + this.titulo);
         System.out.println("Autor: " + this.autor);
         System.out.println("Número de páginas: " + this.numeroPaginas);
