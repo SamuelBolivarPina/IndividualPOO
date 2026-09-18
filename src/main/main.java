@@ -6,5 +6,6 @@ import CuentaBancaria.CuentaBancaria;
 import Estudiante.Estudiante;
 
 public class main{
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 }
