@@ -52,5 +52,7 @@ public class main {
 
         System.out.print("Ingrese curso del estudiante: ");
         String cursoEst = scanner.nextLine();
+        Estudiante estudianteUsuario = new Estudiante(nombreEst, edadEst, cursoEst);
+        Estudiante estudianteDosParams = new Estudiante(nombreEst, edadEst);
     }
 }
