@@ -27,8 +27,18 @@ public class main {
         Libro libroDefecto = new Libro(); // Probar constructor por defecto
 
         // --- 2. Lectura e instanciación de CuentaBancaria ---
-        System.out.println("\n--- Datos de la Cuenta Bancaria ---");
+        System.out.println("--- Datos de la Cuenta Bancaria ---");
         System.out.print("Ingrese número de cuenta: ");
         String numCuenta = scanner.nextLine();
+
+        System.out.print("Ingrese saldo inicial: ");
+        double saldo = scanner.nextDouble();
+        scanner.nextLine(); // Limpiar buffer
+
+        System.out.print("Ingrese tipo de cuenta (Ahorros/Corriente): ");
+        String tipoCuenta = scanner.nextLine();
+
+        CuentaBancaria cuentaUsuario = new CuentaBancaria(numCuenta, saldo, tipoCuenta);
+        CuentaBancaria cuentaDosParams = new CuentaBancaria(numCuenta, tipoCuenta); // Probar constructor de 2 parámetros
     }
 }
