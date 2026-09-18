@@ -22,6 +22,7 @@ public class Estudiante {
         this(nombre, edad); // Reutiliza la asignación de nombre y edad
         this.curso = curso;  // Asigna el atributo restante
     }
+
     // Getters y Setters
     public String getNombre() {
         return nombre;
@@ -46,10 +47,12 @@ public class Estudiante {
     public void setCurso(String curso) {
         this.curso = curso;
     }
+
     // Metodo para mostrar los Detalles del estudiante
     public void mostrarDetalles() {
         System.out.println("--- Detalles del Estudiante ---");
         System.out.println("Nombre: " + this.nombre);
         System.out.println("Edad: " + this.edad + " años");
         System.out.println("Curso: " + this.curso);
+    }
 }
